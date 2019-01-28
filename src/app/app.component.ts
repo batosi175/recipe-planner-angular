@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  currentHeader = 'Recipes';
+
+
+  onSelectHeader(selectedHeader: string) {
+    this.currentHeader = selectedHeader;
+  }
 }
